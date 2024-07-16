@@ -1,0 +1,21 @@
+# application.yml 这个是生效的
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@172.20.10.2:1521:xiaoatian
+#    ?useUnicode=true&characterEncoding=UTF-8
+#    ?NLS_LANG=AMERICAN_AMERICA.AL32UTF8
+    username: tianbao
+    password: tianbao
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+#    properties:
+#      charSet: AL32UTF8
+
+# mybatis 配置.xml文件
+mybatis:
+#  configuration:
+#    map-underscore-to-camel-case: true
+#    use-generated-keys: true
+  mapper-locations: classpath:/mapper/*.xml
+# 端口号
+server:
+  port: 8014
